@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    font-family: Roboto, sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    max-width: 90rem;
+    background-color: #fff;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    margin: 0;
+    text-decoration: none;
+    display: flex;
+    color: #000;
+}
+
+button {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.icon {
+    width: 1.5rem;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3.5rem;
+    margin: 0 1.5rem;
+}
+
+.menu .left button,
+.menu .right button {
+    width: 2.125rem;
+    height: 2.125rem;
+    background: #fff;
+}
+
+.menu .left button:hover,
+.menu .right button:hover {
+    background-color: #e1e1e1;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.menu .left {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.menu .left #logo {
+    width: 5.625rem;
+}
+
+.menu .center {
+    display: flex;
+    align-items: center;
+}
+
+.menu .center .search-box {
+    width: 21.75rem;
+    height: 2.5rem;
+    border: .063rem solid #CCCCCC;
+    border-right: none;
+    font-size: 1rem;
+    line-height: 1.9rem;
+    resize: none;
+}
+
+.menu .center .search-button {
+    width: 3.563rem;
+    height: 2.5rem;
+    border: .063rem solid #CCCCCC;
+    background-color: #F8F8F8;
+}
+
+.menu .center .search-button:hover {
+    cursor: pointer;
+    background-color: #e1e1e1;
+}
+
+.menu .right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.menu .right #image-profile {
+    width: 2.125rem;
+    font-size: large;
+    font-weight: 700;
+    background-color: #e1e1e1;
+    border-radius: 50%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.563rem;
+    margin: 1.75rem 1rem 1rem 4.688rem;
+}
+
+.container .watching {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: .875rem;
+    font-weight: 700;
+}
+
+.container .watching .video {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.container .watching .video img {
+    width: 59.5rem;
+}
+
+.container .watching .video iframe {
+    width: 59.5rem;
+    height: 33.563rem;
+    border-radius: 1rem;
+}
+
+.container .watching .video .video-title {
+    font-size: 1.25rem;
+}
+
+.container .watching .actions {
+    width: 56.375rem;
+    height: 2.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .watching .actions .channel {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.container .watching .actions .channel img {
+    width: 2.625rem;
+}
+
+.container .watching .actions .channel p {
+    font-weight: 400;
+    color: #515151;
+}
+
+.container .watching .actions .subscribe {
+    width: 9.938rem;
+    height: 2.5rem;
+    background-color: #CC0000;
+    border-radius: .125rem;
+    color: #fff;
+    font-size: .875rem;
+    font-weight: 700;
+}
+
+.container .watching .actions .subscribe:hover {
+    background-color: #ff0000;
+}
+
+.container .watching .actions .options {
+    border-radius: .125rem;
+    background-color: #fff;
+    font-weight: 700;
+    gap: .5rem;
+    padding: 0 1rem;
+    font-size: .875rem;
+    height: 2.5rem;
+    text-wrap: nowrap;
+}
+
+.container .watching .actions .options:hover {
+    background-color: #e1e1e1;
+}
+
+.container .watching .informations {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.container .watching .informations div {
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    color: #515151;
+    gap: 1rem;
+}
+
+.container .side-bar {
+    width: 23.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.container .side-bar .thumb {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.container .side-bar .thumb img{
+    width: 10rem;
+    border-radius: .5rem;
+}
+
+.container .side-bar .thumb .data {
+    width: 12.25rem;
+    height: 5.625rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    font-size: .75rem;
+}
+
+.container .side-bar .thumb .data a {
+    color: #515151;
+}
+
+.container .side-bar .thumb .data .thumb-title {
+    font-size: .875rem;
+    font-weight: 700;
+    color: #000;
+}
+
+.container .watching .actions .channel img,
+.container .watching .actions .channel .channel-title,
+.container .watching .actions .subscribe,
+.container .watching .actions .options,
+.container .side-bar .thumb img,
+.container .side-bar .thumb .data:hover {
+    cursor: pointer;
+}
